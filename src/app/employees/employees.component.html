@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>
+    Employees
+  </h1>
+</div>
+<h2>List of employees: </h2>
+<ul *ngFor="let employee of employees; let i = index">
+  <li>
+    {{i+1}} {{employee.firstName}} {{employee.lastName}}
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
